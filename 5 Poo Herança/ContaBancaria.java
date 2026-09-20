@@ -7,7 +7,11 @@ public class ContaBancaria {
         this.saldo = saldo;
     }
 
+    public String getDescricao() {
+        return "Conta Bancária de " + titular + " | Saldo: R$ " + saldo;
+    }
+
     public void exibirExtrato() {
-        System.out.println("Conta comum de " + titular + " | Saldo: R$ " + saldo);
+        System.out.println(getDescricao());
     }
 }
